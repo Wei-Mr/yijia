@@ -24,12 +24,12 @@ const routes = [{
         path: '/my',
         name: 'My',
         component: () => import('../views/my.vue')
-      },
-      {
-        path: '/like',
-        name: 'Like',
-        component: () => import('../views/like.vue')
       }
+      // {
+      //   path: '/like',
+      //   name: 'Like',
+      //   component: () => import('../views/like.vue')
+      // }
     ]
   },
   {
@@ -61,6 +61,11 @@ const routes = [{
     path: '/search',
     name: 'Search',
     component: () => import('../views/search.vue')
+  },
+  {
+    path: '/account',
+    name: 'Account',
+    component: () => import('../views/account.vue')
   },
   {
     path: '*',

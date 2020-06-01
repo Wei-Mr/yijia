@@ -36,6 +36,12 @@ export default {
   },
   methods: {
     search() {
+      this.$toast.loading({
+        forbidClick: true,
+        duration: 0,
+        message: "加载中..."
+      });
+
       this.axios({
         method: "POST",
         url: "/search",
@@ -62,9 +68,11 @@ export default {
           }
           this.menuData = result.data.result.list;
           // console.log("this.dreamData ==> ", this.menuData);
+          this.$toast.clear();
         })
         .catch(err => {
           // console.log("err ==> ", err);
+          this.$toast.clear();
         });
     },
     goDetail(id) {

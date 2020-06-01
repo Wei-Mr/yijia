@@ -4,7 +4,7 @@
   <van-tabbar v-model="active" active-color="#FF644D" route>
       <van-tabbar-item icon="wap-home-o" to="/home">首页</van-tabbar-item>
       <van-tabbar-item icon="bar-chart-o" to="/category">分类</van-tabbar-item>
-      <van-tabbar-item icon="like-o" to="/like">收藏</van-tabbar-item>
+      <!-- <van-tabbar-item icon="like-o" to="/like">收藏</van-tabbar-item> -->
       <van-tabbar-item icon="user-o" to="/my">个人</van-tabbar-item>
     </van-tabbar>
     <router-view></router-view>
